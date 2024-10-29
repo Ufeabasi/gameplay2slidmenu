@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-to-Earn Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .task-container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto; /* Enable scrolling if tasks overflow */
+            max-height: 70vh; /* Set a maximum height for the container */
+        }
+
+        .task {
+            background: #e8f5e9;
+            border: 1px solid #81c784;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .task h2 {
+            margin: 0 0 5px;
+            font-size: 18px;
+        }
+
+        .task p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .reward {
+            font-weight: bold;
+            color: #388e3c;
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #388e3c;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="close-icon" id="closePage">&times;</button>
+    <h1>Play-to-Earn Tasks</h1>
+    <div class="task-container" id="taskContainer">
+        <div class="task">
+            <h2>Complete Daily Challenge</h2>
+            <p>Participate in the daily challenge to earn rewards.</p>
+            <p class="reward">Reward: 100 Coins</p>
+        </div>
+        <div class="task">
+            <h2>Invite a Friend</h2>
+            <p>Invite your friends to join the game.</p>
+            <p class="reward">Reward: 50 Coins</p>
+        </div>
+        <div class="task">
+            <h2>Watch Advertisements</h2>
+            <p>Watch 5 advertisements to earn coins.</p>
+            <p class="reward">Reward: 30 Coins</p>
+        </div>
+        <div class="task">
+            <h2>Complete Level 5</h2>
+            <p>Reach level 5 in the game.</p>
+            <p class="reward">Reward: 200 Coins</p>
+        </div>
+        <div class="task">
+            <h2>Participate in Tournaments</h2>
+            <p>Join a tournament and complete all matches.</p>
+            <p class="reward">Reward: 300 Coins</p>
+        </div>
+    </div>
+
+    <script>
+        // Close the page when the close button is clicked
+        document.getElementById('closePage').addEventListener('click', () => {
+            window.close(); // Closes the current window
+        });
+    </script>
+</body>
+</html>
+
+
+ 
